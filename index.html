@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.css">
     <link rel="stylesheet" href="src/index.css"></script>
     <script src="src/eventHandlers.js" charset="utf-8"></script>
-    <script src="src/giftData.js" charset="utf-8"></script>
+    <!-- <script src="src/giftData.js" charset="utf-8"></script> -->
     <script src="src/index.js" charset="utf-8"></script>
     <title>DOM Crud Practice Giftr™</title>
   </head>
@@ -14,7 +14,7 @@
       <i class="gift icon" id="gift-icon"></i>
       Giftr™
     </h1>
-    
+
     <div class="ui grid">
       <div class="row"></div>
       <div class="row"></div>
@@ -28,7 +28,7 @@
             <input id="filter-input" type="text" name="filter" value="" placeholder="Search for gifts...">
             <i class="search icon"></i>
           </div>
-          
+
           <!-- END CODE FOR SEARCH FORM -->
 
         </div>
@@ -44,6 +44,20 @@
             <button id="gift-form-button" type="submit" name="button" class="ui button">Create a New Gift</button>
           </form>
           <!-- END CODE FOR NEW GIFT FORM -->
+
+          <!-- CODE FOR EDIT GIFT FORM -->
+          <form id="edit-gift-form" class="ui form" action="index.html" method="POST">
+            <label for="name">Gift Name: </label>
+            <input id="edit-gift-name-input" type="text" name="name" value="">
+            <label for="image">Gift Image: </label>
+            <input id="edit-gift-image-input" type="text" name="image" value="">
+            <br>
+            <button id="edit-gift-form-button" type="submit" name="button" class="ui button">Submit Edit</button>
+          </form>
+          <!-- END CODE FOR EDIT GIFT FORM -->
+
+
+
 
         </div>
         <div class="two wide column"></div>
